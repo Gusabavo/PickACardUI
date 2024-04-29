@@ -8,13 +8,18 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="92*"/>
-            <RowDefinition Height="125*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="25*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="81*"/>
-            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
+            <Label Content="How many cards shoud I pick?" FontSize="20"/>
+            <Slider Minimum="1" Maximum="15" Foreground="Black" IsSnapToTickEnabled="True" TickPlacement="BottomRight" />
+        </StackPanel>
 
     </Grid>
 </Window>
